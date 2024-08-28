@@ -1,0 +1,101 @@
+body {
+  font-family: 'Arial', sans-serif;
+  background-color: #000000;
+  color: #ffffff;
+  margin: 0;
+  padding: 20px;
+}
+
+h1 {
+  text-align: center;
+  color: #ffcc00;
+  margin-bottom: 20px;
+}
+
+.card {
+  background: #1a1a1a;
+  box-shadow: 0 4px 15px rgba(255, 255, 255, 0.1);
+  padding: 25px;
+  margin: 20px auto;
+  max-width: 500px;
+}
+
+form {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 20px;
+}
+
+input {
+  flex: 1;
+  padding: 12px;
+  border: 2px solid #ffcc00;
+  background: #333333;
+  color: #ffffff;
+  font-size: 16px;
+}
+
+input:focus {
+  outline: none;
+  border-color: #ff9900;
+}
+
+button {
+  padding: 12px 20px;
+  border: none;
+  background-color: #28a745; /* Couleur verte */
+  color: white;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s, transform 0.2s;
+}
+
+button:hover {
+  background-color: #218838; /* Couleur verte foncée au survol */
+  transform: translateY(-1px);
+}
+
+ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+li {
+  background: #1a1a1a;
+  margin: 10px 0;
+  padding: 15px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  box-shadow: 0 2px 5px rgba(255, 255, 255, 0.1);
+  transition: background-color 0.3s;
+}
+
+li:hover {
+  background-color: #333333;
+}
+
+li.completed {
+  text-decoration: line-through;
+  color: #888888;
+}
+
+li button {
+  background-color: #ff5733; /* Couleur du bouton de tâche */
+  padding: 8px 12px;
+}
+
+li button:hover {
+  background-color: #c70000; /* Couleur foncée au survol */
+}
+
+/* Séparateur entre les tâches */
+li + li {
+  border-top: 1px solid #444444; /* Séparateur gris */
+  padding-top: 10px;
+  margin-top: 10px;
+}
+
+.btn-complete {
+  margin-left: 10px; /* Ajustez la valeur selon vos besoins */
+}
